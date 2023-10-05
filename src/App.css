@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito&display=swap');
+
+* {
+  margin: 5;
+  font-family: 'Gabarito', cursive;
+}
+body{
+  background-color: #f5f5f5;
+}
+.container{
+  margin-top: 30px;
+  background-color: #FFF;
+  color: #000;
+
+}
+.container h1{
+  margin: 30px;
+}
+.container a{
+  text-decoration: none;
+  color: #000;
+}
+
+.times_e_jogadores{
+  display: flex;
+  flex: 1;
+  margin: 25px;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nomeDoTime{
+  margin-left: 20px;
+}
+#img_cartola{
+  width: 500px;
+  border-radius: 15px;
+}
