@@ -28,19 +28,19 @@ function Jogadores() {
 
     return (
         <>
+
+            <div>
+                <img src="https://logodownload.org/wp-content/uploads/2017/05/cartola-fc-logo-5.png" id='img_cartola' />
+            </div>
             {jogadores && (
                 <>
-                    <div>
-                        <img src="https://logodownload.org/wp-content/uploads/2017/05/cartola-fc-logo-5.png" id='img_cartola' />
-                    </div>
-                        <div className="container">
+                    <div className="container">
 
 
                         <h1>Jogadores do {jogadores.clubes[id].nome}</h1>
-                        {jogadores.atletas.map((e) => (
+                        
+                        {jogadores.atletas && jogadores.atletas.map((e) => (
                             <>
-                                {/* Esse Object.values é pra poder fazer o map dar certo, o map não tava deixando, ele não conseguia dar map no JSON, então esse negócio transfroma em Array */}
-
                                 <div className='times_e_jogadores'>
                                     <img src={e.foto && e.foto.replace('FORMATO', '220x220')} />
                                     <h3>{e.nome}</h3>
